@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: rehui_api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python start_render.py
+    plan: free
+    branch: main
+    autoDeploy: true
