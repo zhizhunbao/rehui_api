@@ -5,7 +5,6 @@ from typing import List, Optional
 import pandas as pd
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Engine
-from sqlalchemy.exc import SQLAlchemyError
 
 
 # ========= 🌐 初始化 =========

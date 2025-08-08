@@ -1,0 +1,3 @@
+[13:09:00] INFO | test_logger.py | test_logger | ✅ Logger 模块已成功启动
+[13:09:00] WARNING | test_logger.py | test_logger | ⚠️ 这是一个警告信息
+[13:09:00] ERROR | test_logger.py | test_logger | ❌ 这是一个错误信息
