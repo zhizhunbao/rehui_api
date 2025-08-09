@@ -14,7 +14,7 @@ def create_project_structure(project_dir: Path):
     api_dir = project_dir / "api"
     api_dir.mkdir(parents=True, exist_ok=True)
 
-    (api_dir / "main_weapp_api.py").write_text('''\
+    (api_dir / "main_api.py").write_text('''\
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 

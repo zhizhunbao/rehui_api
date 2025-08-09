@@ -1,0 +1,50 @@
+[15:47:04] INFO | main_api.py | <module> | 🚀 启动 FastAPI 服务 ...
+[15:47:04] INFO | main_api.py | <module> | 📎 接口地址：http://localhost:8000/api/evaluate?url=https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action#listing=402978407
+[15:47:04] INFO | main_api.py | <module> | 📎 健康检查：http://localhost:8000/ping
+[15:47:06] INFO | main_api.py | evaluate_car_value | 🔍 正在分析车辆链接：https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action
+[15:47:06] WARNING | main_api.py | evaluate_car_value | ⚠️ 无法分析：❌ Invalid URL: listing_id not found in https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action
+[15:48:42] INFO | main_api.py | <module> | 🚀 启动 FastAPI 服务 ...
+[15:48:42] INFO | main_api.py | <module> | 📎 接口地址：http://localhost:8000/api/evaluate?url=https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K&distance=250&entitySelectingHelper.selectedEntity=m28#listing=356461148/NONE/DEFAULT
+[15:48:42] INFO | main_api.py | <module> | 📎 健康检查：http://localhost:8000/ping
+[15:48:45] INFO | main_api.py | evaluate_car_value | 🔍 正在分析车辆链接：https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K
+[15:48:45] WARNING | main_api.py | evaluate_car_value | ⚠️ 无法分析：❌ Invalid URL: listing_id not found in https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K
+[15:54:56] INFO | main_api.py | evaluate_car_value | 🔍 正在分析车辆链接：https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K
+[15:54:56] WARNING | main_api.py | evaluate_car_value | ⚠️ 无法分析：❌ Invalid URL: listing_id not found in https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K
+[15:58:26] INFO | main_api.py | evaluate_car_value | 🔍 正在分析车辆链接：https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K
+[15:58:26] WARNING | main_api.py | evaluate_car_value | ⚠️ 无法分析：❌ Invalid URL: listing_id not found in https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K
+[16:04:02] INFO | main_api.py | <module> | 🚀 启动 FastAPI 服务 ...
+[16:04:02] INFO | main_api.py | <module> | 📎 接口地址：http://localhost:8000/api/evaluate?url=https%3A%2F%2Fwww.cargurus.ca%2FCars%2Finventorylisting%2FviewDetailsFilterViewInventoryListing.action%3Fzip%3DM9C%26distance%3D250%26entitySelectingHelper.selectedEntity%3Dm12%26sortType%3DAGE_IN_DAYS%26sortDir%3DASC%23listing%3D357226387%2FFEATURED%2FDEFAULT
+[16:04:02] INFO | main_api.py | <module> | 📎 健康检查：http://localhost:8000/ping
+[16:04:06] INFO | main_api.py | evaluate_car_value | 🔍 正在分析车辆链接：https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M9C&distance=250&entitySelectingHelper.selectedEntity=m12&sortType=AGE_IN_DAYS&sortDir=ASC#listing=357226387/FEATURED/DEFAULT
+[16:04:06] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 正在评估车辆 listing_id = 357226387, full_key = nissan_maxima_platinum_fwd_gasoline, year = 2017
+[16:04:06] WARNING | price_saving_evaluator.py | evaluate | ⚠️ 样本不足：nissan_maxima_platinum_fwd_gasoline 2017 仅 1 条
+[16:04:06] WARNING | mileage_saving_evaluator.py | evaluate | ⚠️ 样本不足：nissan_maxima_platinum_fwd_gasoline 2017 → 1
+[16:04:06] WARNING | expected_depreciation_evaluator.py | evaluate | ⚠️ 样本不足：nissan_maxima_platinum_fwd_gasoline 2017 → 1
+[16:04:06] WARNING | market_heat_evaluator.py | evaluate | ⚠️ 样本不足：nissan_maxima_platinum_fwd_gasoline 2017 → 1
+[16:04:06] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ 分析完成：暂无明显推荐理由
+[16:04:06] INFO | main_api.py | evaluate_car_value | ✅ 分析成功
+[16:13:24] INFO | main_api.py | <module> | 🚀 服务启动成功！
+[16:13:24] INFO | main_api.py | <module> | 📎 Swagger 文档：http://localhost:8000/docs
+[16:13:24] INFO | main_api.py | <module> | 📎 Redoc 文档：http://localhost:8000/redoc
+[16:14:29] INFO | car_controller.py | evaluate_car_value | 🔍 正在分析车辆链接：https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M6P&distance=250&entitySelectingHelper.selectedEntity=m28#listing=364223016/NONE/DEFAULT
+[16:14:29] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 正在评估车辆 listing_id = 364223016, full_key = hyundai_tucson_n_line_awd_gasoline, year = 2022
+[16:14:29] WARNING | price_saving_evaluator.py | evaluate | ⚠️ 样本不足：hyundai_tucson_n_line_awd_gasoline 2022 仅 1 条
+[16:14:29] WARNING | mileage_saving_evaluator.py | evaluate | ⚠️ 样本不足：hyundai_tucson_n_line_awd_gasoline 2022 → 1
+[16:14:29] WARNING | expected_depreciation_evaluator.py | evaluate | ⚠️ 样本不足：hyundai_tucson_n_line_awd_gasoline 2022 → 1
+[16:14:29] WARNING | market_heat_evaluator.py | evaluate | ⚠️ 样本不足：hyundai_tucson_n_line_awd_gasoline 2022 → 1
+[16:14:29] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ 分析完成：暂无明显推荐理由
+[16:14:29] INFO | car_controller.py | evaluate_car_value | ✅ 分析成功
+[20:26:30] INFO | main_api.py | <module> | 🚀 服务启动成功！
+[20:26:30] INFO | main_api.py | <module> | 📎 Swagger 文档：http://localhost:8000/docs
+[20:26:30] INFO | main_api.py | <module> | 📎 Redoc 文档：http://localhost:8000/redoc
+[20:27:23] INFO | car_controller.py | evaluate_car_value | 🔍 正在分析车辆链接：https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=H1A&distance=250&entitySelectingHelper.selectedEntity=m28#listing=352427769/NONE/DEFAULT
+[20:27:23] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 正在评估车辆 listing_id = 352427769, full_key = hyundai_kona_sel_fwd_electric, year = 2019
+[20:27:23] WARNING | price_saving_evaluator.py | evaluate | ⚠️ 样本不足：hyundai_kona_sel_fwd_electric 2019 仅 1 条
+[20:27:23] WARNING | mileage_saving_evaluator.py | evaluate | ⚠️ 样本不足：hyundai_kona_sel_fwd_electric 2019 → 1
+[20:27:23] WARNING | expected_depreciation_evaluator.py | evaluate | ⚠️ 样本不足：hyundai_kona_sel_fwd_electric 2019 → 1
+[20:27:23] WARNING | market_heat_evaluator.py | evaluate | ⚠️ 样本不足：hyundai_kona_sel_fwd_electric 2019 → 1
+[20:27:23] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ 分析完成：暂无明显推荐理由
+[20:27:23] INFO | car_controller.py | evaluate_car_value | ✅ 分析成功
+[20:53:37] INFO | main_api.py | _on_startup | 🚀 服务启动成功！
+[20:53:37] INFO | main_api.py | _on_startup | 📎 Swagger 文档：http://localhost:8000/docs
+[20:53:37] INFO | main_api.py | _on_startup | 📎 Redoc 文档：http://localhost:8000/redoc

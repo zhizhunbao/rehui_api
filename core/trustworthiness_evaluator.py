@@ -1,49 +1,35 @@
 import pandas as pd
 from utils.logger import Logger
 
+# ======== 参数变量 ========
+field_name   = "trustworthiness"
+url_field    = "url"
+certified    = "certified"
+accident_free = "accident_free"
+carfax       = "carfax"
+as_is        = "as_is"
 
-class TrustworthinessEvaluator:
-    # ======== 参数变量（字段名 & 判断逻辑） ========
-    main_field     = "trustworthiness"
-    certified      = "certified"
-    accident_free  = "accident_free"
-    carfax         = "carfax"
-    as_is          = "as_is"
-    url            = "url"
+# ======== 输出变量 ========
+output = {
+    "field":      field_name,
+    "value":      None,
+    "rank":       None,
+    "total":      None,
+    "is_value":   None,
+    "url":        None,
+    "msg":        None
+}
 
-    # ======== 输出变量（评估结果结构） ========
-    output = {
-        "field":     main_field,              # 虚拟字段名
-        "value":     None,                    # True / False
-        "rank":      None,                    # 不适用
-        "total":     None,                    # 不适用
-        "is_value":  None,                    # 是否值得信任
-        "url":       None,                    # 页面链接
-        "msg":       None                     # 文案说明
-    }
+# ======== 工具对象 ========
+logger = Logger.get_global_logger()
 
-    # ======== 工具对象 ========
-    logger = Logger.get_global_logger()
+def evaluate(row: pd.Series) -> dict:
+    is_value = (row[certified] or row[accident_free] or row[carfax]) and not row[as_is]
+    msg = "车辆具备认证 / 无事故 / 有 CARFAX，可信度高" if is_value else "无认证或存在 AS-IS 风险，建议谨慎"
 
-    @classmethod
-    def evaluate(cls, row: pd.Series) -> dict:
-        result = cls.output.copy()
-
-        certified     = row[cls.certified]
-        accident_free = row[cls.accident_free]
-        carfax        = row[cls.carfax]
-        as_is         = row[cls.as_is]
-        url           = row[cls.url]
-
-        is_value = (certified or accident_free or carfax) and not as_is
-        msg = (
-            "Vehicle is certified / accident-free / has CARFAX — trustworthy"
-            if is_value else
-            "Missing certification or has AS-IS risk — not trustworthy"
-        )
-
-        result["value"]     = is_value
-        result["is_value"]  = is_value
-        result["url"]       = url
-        result["msg"]       = msg
-        return result
+    result = output.copy()
+    result["value"]     = is_value
+    result["is_value"]  = is_value
+    result["url"]       = row[url_field]
+    result["msg"]       = msg
+    return result
