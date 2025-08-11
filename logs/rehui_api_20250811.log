@@ -1,0 +1,127 @@
+[12:36:57] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[12:36:57] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[12:36:57] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[12:36:57] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[12:36:58] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[12:37:15] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M6P&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=419816554/NONE/DEFAULT
+[12:37:16] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=419816554 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=385)
+[12:37:16] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 热度 1，排 1/385；高价值配置：前排座椅加热，导航系统；关键安全配置：防抱死制动，倒车影像，盲点监测，侧气帘
+[12:51:12] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M6P&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=419816554/NONE/DEFAULT
+[12:51:13] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=419816554 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=385)
+[12:51:13] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 热度 1，排 1/385；高价值配置：前排座椅加热，导航系统；关键安全配置：防抱死制动，倒车影像，盲点监测，侧气帘
+[12:52:55] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M6P&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=419816554/NONE/DEFAULT
+[12:52:55] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=419816554 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=385)
+[12:52:55] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 热度 1，排 1/385；高价值配置：前排座椅加热，导航系统；关键安全配置：防抱死制动，倒车影像，盲点监测，侧气帘
+[12:55:26] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[12:55:34] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[12:55:34] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[12:55:34] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[12:55:34] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[12:56:53] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[12:56:53] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[12:56:53] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[12:56:53] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[13:03:39] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[13:03:39] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[13:03:39] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[13:03:39] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[13:03:39] INFO | main_api.py | <module> | 🚀 当前热重载模式: 未知（可能未启用 reload）
+[13:03:40] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:04:58] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[13:04:59] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:05:04] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[13:05:04] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[13:05:04] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[13:05:04] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[13:05:05] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:06:09] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[13:06:09] INFO | main_api.py | <module> | 🚀 当前热重载模式: 未知（可能未启用 reload）
+[13:06:12] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[13:06:12] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[13:06:12] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[13:06:12] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[13:06:13] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:08:11] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[13:08:12] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:08:16] INFO | main_api.py | setup_reload_mode_logging | 🚀 预计热重载模式: WatchFilesReload
+[13:08:16] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[13:08:16] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[13:08:16] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[13:08:16] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[13:08:17] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:09:39] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[13:09:44] INFO | main_api.py | <module> | 🚀 预计热重载模式: WatchFilesReload
+[13:09:44] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[13:09:44] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[13:09:44] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[13:09:44] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[13:09:45] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:09:45] INFO | main_api.py | lifespan | 🚀 当前热重载模式: 未知
+[13:10:46] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[13:10:47] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:10:47] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[13:11:01] INFO | main_api.py | <module> | 🚀 预计热重载模式: WatchFilesReload
+[13:11:01] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[13:11:01] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[13:11:01] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[13:11:01] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[13:11:02] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:11:02] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[13:11:56] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M9C&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=419622298/NONE/DEFAULT
+[13:11:58] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=419622298 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=385)
+[13:11:58] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 高价值配置：前排座椅加热，导航系统；关键安全配置：防抱死制动，倒车影像，盲点监测，侧气帘
+[13:16:09] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=K1G&distance=250&entitySelectingHelper.selectedEntity=m7#listing=414899692/NONE/DEFAULT
+[13:16:09] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=414899692 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[13:16:09] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 热度排名：第 1 名 / 同款 373 台；高价值配置：前排座椅加热；关键安全配置：防抱死制动，自适应巡航，倒车影像，侧气帘
+[13:21:01] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[13:21:02] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:21:02] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[13:21:14] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=K1G&distance=250&entitySelectingHelper.selectedEntity=m7#listing=414899692/NONE/DEFAULT
+[13:21:14] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=414899692 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[13:21:14] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 全量热度排名：第 2 名；高价值配置：前排座椅加热；关键安全配置：防抱死制动，自适应巡航，倒车影像，侧气帘
+[13:30:40] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=K1G&distance=250&entitySelectingHelper.selectedEntity=m7#listing=414899692/NONE/DEFAULT
+[13:30:42] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=414899692 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[13:30:42] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 全量热度排名：第 2 名；高价值配置：前排座椅加热；关键安全配置：防抱死制动，自适应巡航，倒车影像，侧气帘
+[13:30:51] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[13:30:52] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:30:52] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[13:30:59] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=K1G&distance=250&entitySelectingHelper.selectedEntity=m7#listing=414899692/NONE/DEFAULT
+[13:31:00] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=414899692 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[13:31:00] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 全量热度排名：第 2 名；高价值配置：前排座椅加热；关键安全配置：防抱死制动，自适应巡航，倒车影像，侧气帘；可信度：Carfax 记录
+[13:39:10] INFO | main_api.py | <module> | 🚀 预计热重载模式: WatchFilesReload
+[13:39:10] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[13:39:10] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[13:39:10] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[13:39:10] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[13:39:11] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:39:11] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[13:39:20] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=K1G&distance=250&entitySelectingHelper.selectedEntity=m7#listing=414899692/NONE/DEFAULT
+[13:39:22] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=414899692 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[13:39:22] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 价格回血 2054，排 36/373；贬值 528，贬值率 2.2%，排 80/373；全量热度排名：第 2 名；高价值配置：前排座椅加热；关键安全配置：防抱死制动，自适应巡航，倒车影像，侧气帘；可信度：Carfax 记录
+[13:48:28] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[13:48:29] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:48:29] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[13:48:46] INFO | main_api.py | <module> | 🚀 预计热重载模式: WatchFilesReload
+[13:48:46] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[13:48:46] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[13:48:46] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[13:48:46] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[13:48:47] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:48:47] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[13:48:52] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=K1G&distance=250&entitySelectingHelper.selectedEntity=m7#listing=414899692/NONE/DEFAULT
+[13:48:54] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=414899692 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[13:48:54] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 价格回血 2054，排 36/373；贬值 528，贬值率 2.2%，排 80/373；全量热度排名：第 2 名；高价值配置：前排座椅加热；关键安全配置：防抱死制动，自适应巡航，倒车影像，侧气帘；可信度：Carfax 记录
+[13:59:35] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[13:59:36] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:59:36] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[13:59:45] INFO | main_api.py | <module> | 🚀 预计热重载模式: WatchFilesReload
+[13:59:45] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[13:59:45] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[13:59:45] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[13:59:45] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[13:59:46] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[13:59:46] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[13:59:54] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=K1G&distance=250&entitySelectingHelper.selectedEntity=m7#listing=414899692/NONE/DEFAULT
+[13:59:55] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=414899692 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[13:59:55] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: {'points': ['价格有优势（≈2,054）', '预计短期贬值较小（≈2.2%）', '热度高（全量第 2 名）'], 'next_actions': ['预约看车并核对 Carfax / 保养记录 / 里程一致性', '现场检查电池健康、轮胎与刹车、随车充电配件/钥匙', '车况正常可小幅议价；不合适继续对比同款']}
+[14:07:01] INFO | main_api.py | lifespan | 🛑 服务已关闭

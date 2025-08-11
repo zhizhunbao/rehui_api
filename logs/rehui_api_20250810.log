@@ -1,0 +1,118 @@
+[18:36:11] INFO | main_api.py | <module> | 🔧 使用精简热加载（只监听核心目录） ...
+[18:36:12] INFO | main_api.py | _on_startup | 🚀 服务启动成功！
+[18:36:12] INFO | main_api.py | _on_startup | 📎 Swagger 文档：http://localhost:8000/docs
+[18:36:12] INFO | main_api.py | _on_startup | 📎 Redoc 文档：http://localhost:8000/redoc
+[18:38:56] INFO | main_api.py | lifespan | 🚀 服务启动成功！
+[18:38:56] INFO | main_api.py | lifespan | 📎 Swagger 文档：http://localhost:8000/docs
+[18:38:56] INFO | main_api.py | lifespan | 📎 Redoc 文档：http://localhost:8000/redoc
+[18:39:01] INFO | main_api.py | <module> | 🔧 使用精简热加载（监听目录）：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\controller', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core']
+[18:39:02] INFO | main_api.py | lifespan | 🚀 服务启动成功！
+[18:39:02] INFO | main_api.py | lifespan | 📎 Swagger 文档：http://localhost:8000/docs
+[18:39:02] INFO | main_api.py | lifespan | 📎 Redoc 文档：http://localhost:8000/redoc
+[18:40:28] INFO | car_controller.py | evaluate_car_value | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M4B&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=422947961/NONE/DEFAULT
+[18:40:28] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=422947961 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021
+[18:40:28] WARNING | price_saving_evaluator.py | evaluate | ⚠️ 样本不足：tesla_model 3_standard_range_plus_rwd_electric 2021 仅 1 条
+[18:40:28] WARNING | mileage_saving_evaluator.py | evaluate | ⚠️ 样本不足：tesla_model 3_standard_range_plus_rwd_electric 2021 → 1
+[18:40:28] WARNING | expected_depreciation_evaluator.py | evaluate | ⚠️ 样本不足：tesla_model 3_standard_range_plus_rwd_electric 2021 → 1
+[18:40:28] WARNING | market_heat_evaluator.py | evaluate | ⚠️ 样本不足：tesla_model 3_standard_range_plus_rwd_electric 2021 → 1
+[18:40:28] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 车辆具备认证 / 无事故 / 有 CARFAX，可信度高
+[18:50:40] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[18:53:57] INFO | main_api.py | <module> | 🔧 使用精简热加载（监听目录）：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\controller', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core']
+[18:53:58] INFO | main_api.py | lifespan | 🚀 服务启动成功！
+[18:53:58] INFO | main_api.py | lifespan | 📎 Swagger 文档：http://localhost:8000/docs
+[18:53:58] INFO | main_api.py | lifespan | 📎 Redoc 文档：http://localhost:8000/redoc
+[18:54:04] INFO | car_controller.py | evaluate_car_value | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M4B&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=422947961/NONE/DEFAULT
+[18:54:05] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=422947961 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=360)
+[18:54:05] ERROR | car_controller.py | evaluate_car_value | 💥 服务异常: evaluate() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\workspace\python_workspace\rehui_api\controller\car_controller.py", line 31, in evaluate_car_value
+    data = evaluate_from_url(req.url)
+  File "D:\BaiduSyncdisk\workspace\python_workspace\rehui_api\services\car_value_analysis_service.py", line 90, in evaluate_from_url
+    r = evaluator(df, row)               # def evaluate(df: DataFrame, row: Series)
+TypeError: evaluate() takes 1 positional argument but 2 were given
+[19:20:00] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[19:41:56] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[19:41:56] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[19:41:56] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[19:41:56] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[19:41:57] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[19:44:24] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M4B&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=422947961/NONE/DEFAULT
+[19:44:24] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=422947961 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=360)
+[19:44:24] ERROR | main_api.py | api_evaluate | 💥 服务异常: 'trustworthiness'
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\workspace\python_workspace\rehui_api\.venv\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'trustworthiness'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BaiduSyncdisk\workspace\python_workspace\rehui_api\api\main_api.py", line 64, in api_evaluate
+    return evaluate_from_url(str(req.url))
+  File "D:\BaiduSyncdisk\workspace\python_workspace\rehui_api\services\car_value_analysis_service.py", line 64, in evaluate_from_url
+    result = build_result(df, row)
+  File "D:\BaiduSyncdisk\workspace\python_workspace\rehui_api\core\car_value_evaluator.py", line 47, in evaluate
+    output["trustworthiness"] = row[trust_field] if isinstance(row[trust_field], list) else []
+  File "D:\BaiduSyncdisk\workspace\python_workspace\rehui_api\.venv\lib\site-packages\pandas\core\series.py", line 1130, in __getitem__
+    return self._get_value(key)
+  File "D:\BaiduSyncdisk\workspace\python_workspace\rehui_api\.venv\lib\site-packages\pandas\core\series.py", line 1246, in _get_value
+    loc = self.index.get_loc(label)
+  File "D:\BaiduSyncdisk\workspace\python_workspace\rehui_api\.venv\lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'trustworthiness'
+[20:08:36] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[20:08:36] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[20:08:44] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[20:08:44] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[20:08:44] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[20:08:44] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[20:08:44] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[20:09:16] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M9C&distance=250&entitySelectingHelper.selectedEntity=m112#listing=407935405/NONE/DEFAULT
+[20:09:17] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=407935405 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=360)
+[20:09:17] INFO | car_value_evaluator.py | evaluate | ✅ 评估完成 listing_id=407935405（摘要：暂无明显推荐理由）
+[20:09:17] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 暂无明显推荐理由
+[20:44:58] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M9C&distance=250&entitySelectingHelper.selectedEntity=m112#listing=407935405/NONE/DEFAULT
+[20:44:58] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=407935405 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=360)
+[20:44:58] INFO | car_value_evaluator.py | evaluate | ✅ 评估完成 listing_id=407935405（摘要：暂无明显推荐理由）
+[20:44:58] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 暂无明显推荐理由
+[20:45:47] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M9C&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=420979118/NONE/DEFAULT
+[20:45:47] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=420979118 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=360)
+[20:45:47] INFO | car_value_evaluator.py | evaluate | ✅ 评估完成 listing_id=420979118（摘要：价格回血第 5（前5））
+[20:45:47] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 价格回血第 5（前5）
+[20:46:20] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[20:46:21] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[20:46:26] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[20:46:26] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[20:46:26] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[20:46:26] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[20:46:27] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[20:46:42] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M9C&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=420979118/NONE/DEFAULT
+[20:46:42] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=420979118 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=360)
+[20:46:42] INFO | car_value_evaluator.py | evaluate | ✅ 评估完成 listing_id=420979118（摘要：价格回血第 5（前5）；热度排名第 1（前5））
+[20:46:42] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 价格回血第 5（前5）；热度排名第 1（前5）
+[20:56:26] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[20:56:26] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[21:03:53] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[21:04:18] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[21:04:18] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[21:04:18] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[21:04:18] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[21:04:19] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[21:04:32] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M9C&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=420979118/NONE/DEFAULT
+[21:04:32] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=420979118 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=360)
+[21:04:32] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 价格回血 5350，排 5/360；热度 1，排 1/360；高价值配置：前排座椅加热，真皮座椅，导航系统，远程启动，天窗；关键安全配置：防抱死制动，倒车影像，盲点监测，侧气帘
+[21:14:08] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[21:14:09] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[21:14:14] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[21:14:14] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[21:14:14] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[21:14:14] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[21:14:15] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[21:14:43] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=M9C&distance=250&entitySelectingHelper.selectedEntity=m112&sortType=AGE_IN_DAYS&sortDir=ASC#listing=420979118/NONE/DEFAULT
+[21:14:43] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=420979118 full_key=tesla_model 3_standard_range_plus_rwd_electric year=2021 (cohort_size=360)
+[21:14:43] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: 价格回血 5350，排 5/360；热度 1，排 1/360；高价值配置：前排座椅加热，真皮座椅，导航系统，远程启动，天窗；关键安全配置：防抱死制动，倒车影像，盲点监测，侧气帘
+[21:54:59] INFO | main_api.py | lifespan | 🛑 服务已关闭

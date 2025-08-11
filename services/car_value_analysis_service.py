@@ -1,105 +1,75 @@
-# car_value_analysis_service.py
+# services/car_value_analysis_service.py
 import re
 import pandas as pd
-from copy import deepcopy
 
-from core.price_saving_evaluator          import evaluate as price_eval
-from core.mileage_saving_evaluator        import evaluate as mileage_eval
-from core.expected_depreciation_evaluator import evaluate as depreciation_eval
-from core.market_heat_evaluator           import evaluate as heat_eval
-from core.trustworthiness_evaluator       import evaluate as trust_eval
-from core.options_evaluator               import evaluate as options_eval
-from core.safety_features_evaluator       import evaluate as safety_eval
-
-from db.db              import get_engine
-from utils.logger       import Logger
-from utils.serialize    import to_native
-
+from db.db           import get_engine
+from utils.logger    import Logger
+from utils.serialize import to_native
+from core.car_value_evaluator import evaluate as build_result  # 你刚写的 evaluator（中文推荐理由）
 
 # ======== 参数变量 ========
-table_name               = "dws_rehui_rank_cargurus"                 # 主表
-url_field                = "url"                                      # 链接字段
-full_key_field           = "full_key"                                 # 车型 key
-year_field               = "year"                                     # 年份字段
-listing_id_field         = "listing_id"                               # 主键
-field_key                = "field"                                    # evaluator 统一字段名键
-is_value_field           = "is_value"                                 # evaluator 推荐标记键
-msg_field                = "msg"                                      # evaluator 文案键
-method_arg_name          = "df"                                       # evaluator 是否需要 df
-listing_id_pattern       = r"[#&?]listing=(\d+)"                       # URL 提取 listing_id
-query_by_field_tpl       = "SELECT * FROM {table} WHERE {field} = %s"  # 单字段查询
-
-evaluators = [
-    price_eval,
-    mileage_eval,
-    depreciation_eval,
-    heat_eval,
-    trust_eval,
-    options_eval,
-    safety_eval
-]
-
-
-# ======== 输出变量 ========
-output = {
-    "url":            None,     # 页面链接
-    "full_key":       None,     # 品牌型号配置 key
-    "year":           None,     # 年份
-    "highlights":     [],       # 推荐亮点字段列表
-    "is_recommended": None,     # 是否推荐
-    "summary":        "",       # 汇总推荐理由文本
-    "fields":         {}        # 各 evaluator 明细
-}
-
+TABLE_NAME         = "dws_rehui_rank_cargurus"
+FIELD_LISTING_ID   = "listing_id"
+FIELD_FULL_KEY     = "full_key"
+FIELD_YEAR         = "year"
+FIELD_URL          = "url"
+LISTING_ID_PATTERN = r"[#&?]listing=(\d+)"
 
 # ======== 工具对象 ========
 engine = get_engine()
 logger = Logger.get_global_logger()
 
-
-# ======== 核心方法：通过 URL 获取评估结果 ========
-def evaluate_from_url(url: str) -> dict:
-    # 提取 listing_id
-    match = re.search(listing_id_pattern, url)
-    if not match:
-        raise ValueError(f"Invalid URL: listing_id not found in {url}")
-    listing_id = match.group(1)
-
-    # 查询数据库记录
-    query = query_by_field_tpl.format(table=table_name, field=listing_id_field)
-    df    = pd.read_sql(query, engine, params=(listing_id,))
+# ======== 内部：查询工具 ========
+def _fetch_row_by_listing_id(listing_id: str) -> pd.Series:
+    sql = f"""
+        SELECT *
+        FROM {TABLE_NAME}
+        WHERE {FIELD_LISTING_ID} = %s
+        LIMIT 1
+    """
+    df = pd.read_sql(sql, engine, params=(listing_id,))
     if df.empty:
-        raise ValueError(f"No vehicle found with {listing_id_field} = {listing_id}")
-    row = df.iloc[0]
+        raise ValueError(f"No vehicle found with {FIELD_LISTING_ID} = {listing_id}")
+    return df.iloc[0]
 
-    # 日志：基本信息
-    logger.info(f"🔍 evaluating listing_id={listing_id} full_key={row[full_key_field]} year={row[year_field]}")
+def _fetch_cohort(full_key: str, year: int) -> pd.DataFrame:
+    sql = f"""
+        SELECT *
+        FROM {TABLE_NAME}
+        WHERE {FIELD_FULL_KEY} = %s
+          AND {FIELD_YEAR} = %s
+    """
+    return pd.read_sql(sql, engine, params=(full_key, int(year)))
 
-    # 遍历所有评估器
-    fields = {}
-    for evaluator in evaluators:
-        need_df = method_arg_name in evaluator.__code__.co_varnames
-        result  = evaluator(df, row) if need_df else evaluator(row)
-        fields[result[field_key]] = result
+# ======== 对外：通过 URL 评估（只输出一个 JSON） ========
+def evaluate_from_url(url: str) -> dict:
+    # 1) 解析 listing_id
+    m = re.search(LISTING_ID_PATTERN, url)
+    if not m:
+        raise ValueError(f"Invalid URL: listing_id not found in {url}")
+    listing_id = m.group(1)
 
-    # 推荐亮点与汇总
-    highlights     = [k for k, v in fields.items() if v.get(is_value_field)]
-    summary_parts  = [v[msg_field] for v in fields.values() if v.get(is_value_field)]
-    is_recommended = len(highlights) > 0
-    summary_text   = "；".join(summary_parts) if is_recommended else "暂无明显推荐理由"
+    # 2) 查单条 row
+    row = _fetch_row_by_listing_id(listing_id)
 
-    # 构造输出
-    result = deepcopy(output)
-    result["url"]            = row[url_field]
-    result["full_key"]       = row[full_key_field]
-    result["year"]           = row[year_field]
-    result["fields"]         = fields
-    result["highlights"]     = highlights
-    result["is_recommended"] = is_recommended
-    result["summary"]        = summary_text
+    # 3) 查 cohort df（同 full_key + year）
+    df = _fetch_cohort(row[FIELD_FULL_KEY], int(row[FIELD_YEAR]))
 
-    # 日志：完成
-    logger.info(f"✅ evaluate done: {result['summary']}")
+    logger.info(
+        f"🔍 evaluating listing_id={listing_id} "
+        f"full_key={row[FIELD_FULL_KEY]} year={row[FIELD_YEAR]} (cohort_size={len(df)})"
+    )
 
-    # 出口兜底转原生类型
+    # 4) 交给 evaluator 产出唯一 JSON
+    result = build_result(df, row)
+
+    logger.info(f"✅ evaluate done: {result.get('summary')}")
+    return to_native(result)
+
+# ======== 可选：直接用 listing_id 评估（方便内部调用/单测） ========
+def evaluate_by_listing_id(listing_id: str) -> dict:
+    row = _fetch_row_by_listing_id(listing_id)
+    df  = _fetch_cohort(row[FIELD_FULL_KEY], int(row[FIELD_YEAR]))
+    result = build_result(df, row)
+    logger.info(f"✅ evaluate_by_listing_id done: {result.get('summary')}")
     return to_native(result)
