@@ -125,3 +125,30 @@
 [13:59:55] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=414899692 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
 [13:59:55] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: {'points': ['价格有优势（≈2,054）', '预计短期贬值较小（≈2.2%）', '热度高（全量第 2 名）'], 'next_actions': ['预约看车并核对 Carfax / 保养记录 / 里程一致性', '现场检查电池健康、轮胎与刹车、随车充电配件/钥匙', '车况正常可小幅议价；不合适继续对比同款']}
 [14:07:01] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[19:27:39] INFO | main_api.py | <module> | 🚀 预计热重载模式: WatchFilesReload
+[19:27:39] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[19:27:39] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[19:27:39] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[19:27:39] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[19:27:40] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[19:27:40] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[19:35:25] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K&distance=250&entitySelectingHelper.selectedEntity=m7#listing=418387136/NONE/DEFAULT
+[19:35:28] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=418387136 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[19:35:28] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: {'points': ['价格有优势（≈6,069）', '预计短期贬值较小（≈2.2%）', '热度高（全量第 2 名）'], 'next_actions': ['预约看车并核对 Carfax / 保养记录 / 里程一致性', '现场检查电池健康、轮胎与刹车、随车充电配件/钥匙', '车况正常可小幅议价；不合适继续对比同款']}
+[19:41:16] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K&distance=250&entitySelectingHelper.selectedEntity=m7#listing=418387136/NONE/DEFAULT
+[19:41:17] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=418387136 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[19:41:17] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: {'points': ['价格有优势（≈6,069）', '预计短期贬值较小（≈2.2%）', '热度高（全量第 2 名）'], 'next_actions': ['预约看车并核对 Carfax / 保养记录 / 里程一致性', '现场检查电池健康、轮胎与刹车、随车充电配件/钥匙', '车况正常可小幅议价；不合适继续对比同款']}
+[20:40:31] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K&distance=250&entitySelectingHelper.selectedEntity=m7#listing=418387136/NONE/DEFAULT
+[20:40:32] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=418387136 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[20:40:32] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: {'points': ['价格有优势（≈6,069）', '预计短期贬值较小（≈2.2%）', '热度高（全量第 2 名）'], 'next_actions': ['预约看车并核对 Carfax / 保养记录 / 里程一致性', '现场检查电池健康、轮胎与刹车、随车充电配件/钥匙', '车况正常可小幅议价；不合适继续对比同款']}
+[20:40:44] INFO | main_api.py | lifespan | 🛑 服务已关闭
+[20:40:47] INFO | main_api.py | <module> | 🚀 预计热重载模式: WatchFilesReload
+[20:40:47] INFO | main_api.py | <module> | 🔧 热加载监听：['D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\api', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\services', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\core', 'D:\\BaiduSyncdisk\\workspace\\python_workspace\\rehui_api\\utils']
+[20:40:47] INFO | main_api.py | <module> | 📄 swagger: http://localhost:8000/docs
+[20:40:47] INFO | main_api.py | <module> | 📄 redoc:   http://localhost:8000/redoc
+[20:40:47] INFO | main_api.py | <module> | 📄 openapi: http://localhost:8000/openapi.json
+[20:40:48] INFO | main_api.py | lifespan | 🚀 服务启动成功
+[20:40:48] INFO | main_api.py | lifespan | 🚀 当前热重载模式: WatchFilesReload
+[20:40:52] INFO | main_api.py | api_evaluate | 🔍 接收到评估请求: https://www.cargurus.ca/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=V5K&distance=250&entitySelectingHelper.selectedEntity=m7#listing=418387136/NONE/DEFAULT
+[20:40:54] INFO | car_value_analysis_service.py | evaluate_from_url | 🔍 evaluating listing_id=418387136 full_key=toyota_corolla_le_fwd_gasoline year=2022 (cohort_size=373)
+[20:40:54] INFO | car_value_analysis_service.py | evaluate_from_url | ✅ evaluate done: {'points': ['比预估价低≈6,069', '里程偏高，等效多花≈161', '预计短期贬值≈2.2%（压力不大）', '热度很高（全量第 2 名）'], 'next_actions': ['预约看车并核对 Carfax/保养记录/里程一致性', '冷车启动与路试：注意怠速、换挡是否顺畅、是否有异响', '检查机舱/底盘是否渗漏；查看轮胎与刹车磨损', '确认两把钥匙与随车工具；车况正常可小幅议价']}
